@@ -1,35 +1,56 @@
+/*---------- common/utility css--------- */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.navbar-title {
-    font-weight: 700;
-    font-size: 24px;
-    color: #3A3A3A;
-    width: 582px;
-}
-
-nav ul {
-    display: flex;
-    padding: 0;
-}
-
 nav li {
     list-style: none;
     margin-right: 34px;
-
-}
-
-nav li:hover {
-    background-color: rgb(201, 201, 255);
-    padding: 2px 5px;
-    border-radius: 5px;
 }
 
 nav li a {
     text-decoration: none;
     color: #3A3A3A;
     font-size: 16px;
+}
+
+/*----------------- menu section ------------ */
+.menu-bar {
+    display: none;
+}
+
+.navbar-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+nav li:hover {
+    background-color: rgb(201, 201, 255);
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+nav>div>li:hover>ul {
+    display: block;
+    margin: 0;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    padding: 5px;
+    margin: 0;
+}
+
+.main-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.cart-bar {
+    display: none;
 }

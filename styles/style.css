@@ -20,6 +20,8 @@ footer {
 .container {
     background: #FFFFFF;
     width: 1440px;
+    max-width: 100%;
+    min-width: 100%;
 
 }
 
@@ -36,13 +38,13 @@ hr {
     margin-bottom: 100px;
 }
 
-.intro-detail {
+/* .intro-detail {
     width: 582px;
-    height: 270px;
-}
+} */
 
 .section-title {
     font-weight: 700;
+    /* width: 582px; */
     font-size: 52px;
     margin: 0;
 }
@@ -69,7 +71,6 @@ hr {
 
 /*------------ Img with background style ---------------*/
 .fst-round {
-    position: relative;
     width: 475px;
     height: 475px;
     background-color: white;
@@ -115,7 +116,7 @@ hr {
 
 .popular-collectio-title {
     margin: 30px 40%;
-    width: 262px;
+    /* width: 262px; */
     font-weight: 600;
     font-size: 28px;
 }
@@ -128,8 +129,8 @@ hr {
 }
 
 .collection {
-    width: 324px;
-    height: 476px;
+    /* width: 324px;
+    height: 476px; */
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -140,8 +141,8 @@ hr {
 }
 
 .banner img {
-    width: 300px;
-    height: 256px;
+    /* width: 300px;
+    height: 256px; */
 }
 
 .collection-info h3 {
@@ -188,11 +189,11 @@ hr {
     align-items: center;
     color: rgba(224, 44, 109, 0.87);
     gap: 8px;
-    margin-top: 50px;
+    margin-top: 40px;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
-    margin-left: 1140px;
+    margin-left: 81%;
 }
 
 .more a:hover {
@@ -215,12 +216,12 @@ hr {
 }
 
 .feature-image {
-    width: 404px;
-    height: 270px;
+    /* width: 404px;
+    height: 270px; */
 }
 
 .feature-detail {
-    width: 610px;
+    /* width: 610px; */
 }
 
 .feature-detail h2 {
@@ -235,7 +236,7 @@ hr {
     color: #6C6C6C;
     font-weight: 700;
     font-size: 16px;
-    width: 501px;
+    /* width: 501px; */
 }
 
 .button {
@@ -257,8 +258,8 @@ hr {
 
 /* <!------------------- Footer start  ------------------------> */
 .last-section {
-    width: 1440px;
-    height: 239px;
+    /* width: 1440px;
+    height: 239px; */
     background: #0A0826;
     display: flex;
     align-items: center;
@@ -266,8 +267,8 @@ hr {
 }
 
 .footer-detail {
-    width: 270px;
-    height: 139px;
+    /* width: 270px;
+    height: 139px; */
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -305,4 +306,166 @@ hr {
     justify-content: center;
     text-decoration: none;
     font-size: 17px;
+}
+
+/*--------------------- Media Query start ----------------------- */
+@media only screen and (max-width:668px) {
+    nav li {
+        margin-right: 0;
+    }
+
+    .navbar-title {
+        font-size: 16px;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .cart-bar {
+        display: block;
+    }
+
+    /*------------- main responsive start ----------- */
+
+    .intoduction {
+        flex-wrap: wrap-reverse;
+        margin-top: 14px;
+        margin-bottom: 50px;
+    }
+
+    .intro-detail {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+        margin-top: 14px;
+
+    }
+
+    .intro-detail p {
+        font-size: 14px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        margin-bottom: 25px;
+    }
+
+    .intro-detail a {
+        margin-left: 25%;
+    }
+
+    .fst-round {
+        width: 257px;
+        height: 257px;
+    }
+
+    .scnd-round {
+        width: 40%;
+        height: 40%;
+        border: 45px solid rgb(238, 234, 234);
+        left: 33px;
+        bottom: -35px;
+    }
+
+    .camera {
+        width: 202px;
+        height: 190px;
+        top: -146px;
+        left: 20px
+    }
+
+    .camera img {
+        width: 100%;
+    }
+
+    .logo>div img {
+        width: 60%;
+    }
+
+    .logo {
+        column-gap: 0px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+
+    .popular {
+        margin-top: 50px;
+    }
+
+    .popular-collectio-title {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .more a {
+        margin-left: 65%;
+        margin-top: 32px;
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .feature-image {
+        width: 80%;
+    }
+
+    .feature-image img {
+        width: 100%;
+    }
+
+    .feature-detail {
+        width: 80%;
+    }
+
+    .feature-detail h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .feature-detail p {
+        text-align: center;
+    }
+
+    .button {
+        margin: 37px;
+        text-align: center;
+    }
+
+    /* ---------------footer start ----------- */
+    .last-section {
+        height: 211px;
+    }
+
+    .footer-detail h3 {
+        font-size: 16px;
+    }
+
+    .footer-detail p {
+        font-size: 12px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+
+    .contact-logo {
+        column-gap: 7px;
+        margin-top: 10px;
+    }
 }
